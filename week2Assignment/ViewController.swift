@@ -23,13 +23,25 @@ class ViewController: UIViewController {
 
   @IBOutlet weak var name: UITextField!
   @IBOutlet weak var age: UITextField!
-  @IBOutlet weak var displayText: UILabel!
+  @IBOutlet weak var displayMultiText: UITextView!
   
   
   @IBAction func processNameAndAge(sender: AnyObject) {
     
-    displayText.text = "Hello World"
+    if name.text! == "" {
+      displayMultiText.text = "Please enter your name!"
+    } else if age.text! == "" {
+      displayMultiText.text = "Please enter your age!"
+    } else if Int(age.text!) == nil {
+      displayMultiText.text = "Please enter your age as a number!"
+    }else {
+      displayMultiText.text = "Hello \(name.text!), you are \(age.text!) years old!"
+    }
   }
   
+ 
+  @IBAction func helloWorld(sender: AnyObject) {
+    displayMultiText.text = "Hello World"
+  }
 }
 

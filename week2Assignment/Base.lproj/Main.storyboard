@@ -25,21 +25,28 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UbD-i2-6t8">
                                 <rect key="frame" x="56" y="152" width="262" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Placeholder Text, Replace Me!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oCt-hn-yCY">
-                                <rect key="frame" x="56" y="272" width="262" height="58"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1s-0G-4uZ">
-                                <rect key="frame" x="137" y="205" width="101" height="30"/>
-                                <state key="normal" title="Generate Text!"/>
+                                <rect key="frame" x="113" y="258" width="150" height="30"/>
+                                <state key="normal" title="Part 2: Generate Text!"/>
                                 <connections>
                                     <action selector="processNameAndAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2nF-rO-gCn"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYM-mI-snV">
+                                <rect key="frame" x="100" y="209" width="176" height="30"/>
+                                <state key="normal" title="Part 1: Hello World Button"/>
+                                <connections>
+                                    <action selector="helloWorld:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dte-je-fse"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Placeholder Text, Replace Me!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aP7-Ky-VfS">
+                                <rect key="frame" x="56" y="366" width="262" height="153"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -54,7 +61,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="age" destination="UbD-i2-6t8" id="iej-P2-SA5"/>
-                        <outlet property="displayText" destination="oCt-hn-yCY" id="cIE-yJ-POE"/>
+                        <outlet property="displayMultiText" destination="aP7-Ky-VfS" id="Is6-gS-pdx"/>
                         <outlet property="name" destination="HmG-X9-jPg" id="izP-6D-gwy"/>
                     </connections>
                 </viewController>
