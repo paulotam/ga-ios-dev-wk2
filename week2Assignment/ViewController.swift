@@ -29,17 +29,58 @@ class ViewController: UIViewController {
   @IBAction func processNameAndAge(sender: AnyObject) {
     
     if name.text! == "" {
-      displayMultiText.text = "Please enter your name!"
+      displayMulti("Please enter your name!")
     } else if age.text! == "" {
-      displayMultiText.text = "Please enter your age!"
+      displayMulti("Please enter your age!")
     } else if Int(age.text!) == nil {
-      displayMultiText.text = "Please enter your age as a number!"
+      displayMulti("Please enter your age as a number!")
     }else {
-      displayMultiText.text = "Hello \(name.text!), you are \(age.text!) years old!"
+      displayMulti("Hello \(name.text!), you are \(age.text!) years old!")
     }
   }
   
+  func displayMulti(displayText: String) {
+    displayMultiText.text = displayText
+  }
+  
+  @IBAction func processPart3(sender: AnyObject) {
+    let myAge = Int(age.text!)
+    if myAge == nil {
+      displayMulti("Please enter your age as a number!")
+    } else {
+      if myAge >= 21 {
+        displayMulti("You can drink!")
+      }else if myAge >= 18{
+        displayMulti("You can vote.")
+      }else if myAge >= 16 {
+        displayMulti("You can drive")
+      }else {
+        displayMulti("Grow up!")
+      }
+
+    }
+  }
  
+  @IBAction func processPart4(sender: AnyObject) {
+    let myAge = Int(age.text!)
+    if myAge == nil {
+      displayMulti("Please enter your age as a number!")
+    } else {
+      if myAge >= 16 && myAge <= 17  {
+        displayMulti("You can drive!")
+      }else if myAge >= 18 && myAge <=  20 {
+        displayMulti("You can drive and vote!")
+      }else if myAge >= 21 {
+        displayMulti("You can vote, drive, and drink (but not at the same time!).")
+      }else {
+        displayMulti("Grow up!")
+      }
+
+      
+    }
+  }
+  
+  
   @IBAction func helloWorld(sender: AnyObject) {
     displayMultiText.text = "Hello World"
   }
