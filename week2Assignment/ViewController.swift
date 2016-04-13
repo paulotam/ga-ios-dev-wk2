@@ -21,5 +21,15 @@ class ViewController: UIViewController {
   }
 
 
+  @IBOutlet weak var name: UITextField!
+  @IBOutlet weak var age: UITextField!
+  @IBOutlet weak var displayText: UILabel!
+  
+  
+  @IBAction func processNameAndAge(sender: AnyObject) {
+    
+    displayText.text = "Hello World"
+  }
+  
 }
 
