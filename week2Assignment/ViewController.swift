@@ -80,9 +80,87 @@ class ViewController: UIViewController {
     }
   }
   
-  
   @IBAction func helloWorld(sender: AnyObject) {
     displayMultiText.text = "Hello World"
   }
+  
+  @IBOutlet weak var currentValue: UILabel!
+  @IBOutlet weak var newValue: UITextField!
+  
+  
+  @IBAction func processAdd(sender: AnyObject) {
+    let myAdd = Int(newValue.text!)
+    if myAdd == nil {
+      //ERROR?
+    } else {
+      let myCurrentValue = Int(currentValue.text!)
+      let myNew = myAdd! + myCurrentValue!
+      currentValue.text = String(myNew)
+    }
+  }
+  
+  
+  
+  
+  @IBOutlet weak var evenOddField: UITextField!
+  @IBOutlet weak var evenOddDisplay: UILabel!
+  
+  func displayOddEven(displayText: String) {
+    evenOddDisplay.text = displayText
+  }
+  
+  
+  @IBAction func processEvenOrOdd(sender: AnyObject) {
+    let checkNumber = Int(evenOddField.text!)
+    if checkNumber == nil {
+      displayOddEven("Please enter a number!")
+    } else {
+      if checkNumber! % 2 == 0 {
+        displayOddEven("Its Even")
+      } else {
+        displayOddEven("Its Odd")
+      }
+    }
+    
+  }
+
+  
+  class FibonacciAdder {
+    
+    func fibonacciNumberAtIndex(indexOfFibonacciNumber:Int) -> Int {
+      let fibNum = indexOfFibonacciNumber
+      var current = 0, next = 1, result = 0
+      for _ in 0..<fibNum+1 {
+        //current val is 3
+        //temp value becomes 3
+        let tempVar = current
+        //current value becomes next(5)
+        current = next
+        //next value becomes old current(temporoary) + new current(old next)
+        next = tempVar + current
+        result = tempVar
+        print (result)
+      }
+      return Int(result)
+    }
+    
+  }
+  
+  
+  @IBOutlet weak var fibNumber: UITextField!
+  @IBOutlet weak var fibDisplay: UILabel!
+  
+  @IBAction func fibProcess(sender: AnyObject) {
+    let checkNumber = Int(fibNumber.text!)
+    if checkNumber == nil {
+      fibDisplay.text = "Please enter a number!"
+    } else {
+      let f = FibonacciAdder()
+      fibDisplay.text = String(f.fibonacciNumberAtIndex(checkNumber!))
+    }
+
+  }
+  
+  
 }
 

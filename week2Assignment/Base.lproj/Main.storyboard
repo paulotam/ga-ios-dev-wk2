@@ -18,45 +18,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HmG-X9-jPg">
-                                <rect key="frame" x="56" y="98" width="262" height="30"/>
+                                <rect key="frame" x="56" y="86" width="262" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UbD-i2-6t8">
-                                <rect key="frame" x="56" y="152" width="262" height="30"/>
+                                <rect key="frame" x="56" y="129" width="262" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1s-0G-4uZ">
-                                <rect key="frame" x="60" y="234" width="255" height="30"/>
+                                <rect key="frame" x="60" y="210" width="255" height="30"/>
                                 <state key="normal" title="Part 2: Generate Name and Age Text!"/>
                                 <connections>
                                     <action selector="processNameAndAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2nF-rO-gCn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oV-MR-enw">
-                                <rect key="frame" x="101" y="272" width="173" height="30"/>
+                                <rect key="frame" x="101" y="248" width="173" height="30"/>
                                 <state key="normal" title="Part 3: Comment on Age!"/>
                                 <connections>
                                     <action selector="processNameAndAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EkA-eO-hHH"/>
                                     <action selector="processPart3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oxy-Eg-CIW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYM-mI-snV">
-                                <rect key="frame" x="99" y="196" width="176" height="30"/>
-                                <state key="normal" title="Part 1: Hello World Button"/>
-                                <connections>
-                                    <action selector="helloWorld:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dte-je-fse"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Placeholder Text, Replace Me!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aP7-Ky-VfS">
-                                <rect key="frame" x="56" y="366" width="262" height="153"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhN-9X-1OO">
-                                <rect key="frame" x="109" y="310" width="159" height="30"/>
+                                <rect key="frame" x="109" y="286" width="159" height="30"/>
                                 <state key="normal" title="Part 4: Multi Comment!"/>
                                 <connections>
                                     <action selector="processNameAndAge:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hy5-ZD-rJl"/>
@@ -64,6 +51,19 @@
                                     <action selector="processPart4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="icL-Vj-NUc"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hYM-mI-snV">
+                                <rect key="frame" x="99" y="172" width="176" height="30"/>
+                                <state key="normal" title="Part 1: Hello World Button"/>
+                                <connections>
+                                    <action selector="helloWorld:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dte-je-fse"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Placeholder Text, Replace Me!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aP7-Ky-VfS">
+                                <rect key="frame" x="56" y="324" width="262" height="153"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -74,7 +74,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="COx-nU-vu5" kind="show" id="je7-sK-NLl"/>
+                                    <segue destination="Kzl-9o-xcP" kind="show" id="KVu-Vf-70G"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -87,25 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.5" y="386.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="56J-7B-UFI">
-            <objects>
-                <viewController id="COx-nU-vu5" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cst-PB-bKc"/>
-                        <viewControllerLayoutGuide type="bottom" id="Qyp-QT-330"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lkO-W5-wnu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4cZ-UC-vPI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="589.5" y="386.5"/>
+            <point key="canvasLocation" x="105.5" y="386.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A29-gb-N1l">
@@ -123,6 +105,158 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YCi-of-Zji" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-390" y="387"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="f6l-h1-3AL">
+            <objects>
+                <viewController id="Kzl-9o-xcP" customClass="ViewController" customModule="week2Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AL1-n1-xgp"/>
+                        <viewControllerLayoutGuide type="bottom" id="SxE-96-wSK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fOP-fJ-UVy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DXH-Yd-tvi">
+                                <rect key="frame" x="144" y="99" width="87" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1I-sf-bN3">
+                                <rect key="frame" x="130" y="146" width="114" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpv-PR-unK">
+                                <rect key="frame" x="172" y="204" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="processAdd:" destination="Kzl-9o-xcP" eventType="touchUpInside" id="ii7-Ag-ant"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ck8-Ep-MLw">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="9RG-wl-tya">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qzD-iU-VBi">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="juO-Bx-7kt" kind="show" id="JGP-dX-PvR"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="age" destination="DXH-Yd-tvi" id="nmZ-QS-FO4"/>
+                        <outlet property="currentValue" destination="t1I-sf-bN3" id="e5f-Vm-QOy"/>
+                        <outlet property="newValue" destination="DXH-Yd-tvi" id="X5p-DX-ceE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kY0-qn-yOD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="543.5" y="381.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XhQ-ki-nq8">
+            <objects>
+                <viewController id="juO-Bx-7kt" customClass="ViewController" customModule="week2Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Vu0-y3-LO8"/>
+                        <viewControllerLayoutGuide type="bottom" id="X5b-EK-r3P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="znX-mv-HaI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6d-Ts-axz">
+                                <rect key="frame" x="142" y="222" width="69" height="30"/>
+                                <state key="normal" title="Calculate!"/>
+                                <connections>
+                                    <action selector="processEvenOrOdd:" destination="juO-Bx-7kt" eventType="touchUpInside" id="E7B-CD-BXY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Should Print its Even or Odd???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iuf-5o-1Ab">
+                                <rect key="frame" x="56" y="145" width="240" height="69"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gKr-lt-qTu">
+                                <rect key="frame" x="81" y="101" width="212" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cvh-bl-Tyo">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="X5U-xL-WAz">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eUg-ih-mWE">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="2aH-78-2KX" kind="show" id="0l2-N1-iG2"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="evenOddDisplay" destination="Iuf-5o-1Ab" id="abD-0L-z6Y"/>
+                        <outlet property="evenOddField" destination="gKr-lt-qTu" id="541-NS-Db0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQs-Lf-237" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990.5" y="386.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gbx-bJ-TOW">
+            <objects>
+                <viewController id="2aH-78-2KX" customClass="ViewController" customModule="week2Assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mda-GX-CUo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yz3-YE-XeG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NjH-de-H4S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Should print the xth fibonacci number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clA-Qp-8cG">
+                                <rect key="frame" x="43" y="165" width="289" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jge-Ag-NNJ">
+                                <rect key="frame" x="139" y="99" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwB-rX-dP3">
+                                <rect key="frame" x="118" y="214" width="138" height="30"/>
+                                <state key="normal" title="Calculate Fibonacci!"/>
+                                <connections>
+                                    <action selector="fibProcess:" destination="2aH-78-2KX" eventType="touchUpInside" id="BfM-My-NSD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vRE-89-jGk"/>
+                    <connections>
+                        <outlet property="fibDisplay" destination="clA-Qp-8cG" id="OK6-UR-3Vd"/>
+                        <outlet property="fibNumber" destination="Jge-Ag-NNJ" id="G4v-1g-ebc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dul-F8-k0r" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1465.5" y="394.5"/>
         </scene>
     </scenes>
 </document>
