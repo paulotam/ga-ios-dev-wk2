@@ -27,6 +27,7 @@ class ViewController: UIViewController {
   
   
   @IBAction func processNameAndAge(sender: AnyObject) {
+   // guard let name.text! else { displayMulti("Please enter your name!") }
     
     if name.text! == "" {
       displayMulti("Please enter your name!")
@@ -127,13 +128,13 @@ class ViewController: UIViewController {
   
   class FibonacciAdder {
     
-    func fibonacciNumberAtIndex(indexOfFibonacciNumber:Int) -> Int {
+    func fibonacciNumberAtIndex(indexOfFibonacciNumber:Int) -> Double {
       let fibNum = indexOfFibonacciNumber
-      var current = 0, next = 1, result = 0
+      var current:Double = 0, next:Double = 1, result:Double = 0
       for _ in 0..<fibNum+1 {
         //current val is 3
         //temp value becomes 3
-        let tempVar = current
+        let tempVar:Double = current
         //current value becomes next(5)
         current = next
         //next value becomes old current(temporoary) + new current(old next)
@@ -141,7 +142,7 @@ class ViewController: UIViewController {
         result = tempVar
         print (result)
       }
-      return Int(result)
+      return Double(result)
     }
     
   }
